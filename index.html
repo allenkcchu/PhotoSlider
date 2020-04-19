@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    $(function(){
+    $('.bxslider').bxSlider({
+    mode: 'fade',
+    captions: true,
+    slideWidth: 600
+    });
+    });
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>SimpleJquery</h1>
+    <div id="list">List</div>
+    <p class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quo.</p>
+    <p class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, ipsa!</p>
+    <p class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, ipsam.</p>
+
+    <ul class="bxslider">
+        <li>
+            <img src="img/1.jpg" alt="">
+        </li>
+        <li>
+            <img src="img/2.jpg" alt="">
+        </li>
+        <li>
+            <img src="img/3.jpg" alt="">
+        </li>
+        <li>
+            <img src="img/4.jpg" alt="">
+        </li>
+        <li><img src="img/5.jpg" alt=""></li>
+    </ul>
+
+    <script type="text/javascript">
+        $('h1').css({ 'color': 'red' });
+        $('#list').html('HTML list');
+        $('.items').css({ 'color': 'blue' });
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                auto: true,
+                // autoControls: true,
+                // stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 500
+            });
+        });
+    </script>
+</body>
+
+</html>
